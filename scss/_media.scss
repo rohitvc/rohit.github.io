@@ -8,13 +8,85 @@
 }
 
 @media (max-width: 768px) {
+  .portfolio_grid {
+    width: 100%;
+    height: 40%;
+    margin: 0 auto;
+  }
 }
 
-@media (max-width: 586px) {
+@media (max-width: 661px) {
   .portfolio_grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr) !important;
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
     grid-gap: 1rem;
     box-sizing: border-box;
+  }
+
+  .overlay {
+    h1 {
+      font-size: 1.5rem;
+    }
+    .btn {
+      padding: 0.5rem 1rem !important;
+      font-size: 0.8rem !important;
+    }
+  }
+
+  .header_about,
+  .header_portfolio,
+  .header_contact {
+    background: linear-gradient(62deg, #fc5d76, #bd032b);
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 2.5rem !important;
+      color: #fff;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1rem !important;
+      color: #ddd;
+    }
+  }
+
+  .section_container {
+    margin: 2rem auto;
+
+    .section_about {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .section_profile {
+      display: grid;
+
+      grid-template-columns: 1fr !important;
+      text-align: center;
+      grid-gap: 1rem;
+    }
+  }
+
+  .form_container {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 2rem auto;
+    width: 80%;
+    height: 100% !important;
+    background: linear-gradient(180deg, #d8364c 50%, #393e46 50%) !important;
+
+    .form_grid {
+      height: 100%;
+      display: block !important;
+
+      .form_side {
+        height: 100% !important;
+      }
+    }
   }
 }

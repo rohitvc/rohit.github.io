@@ -2,6 +2,10 @@ $(document).ready(function() {
   $(".menu-icon").on("click", function() {
     $("nav ul").toggleClass("showing");
   });
+
+  $(".menu li a").on("click", function() {
+    $("nav ul").toggleClass("showing");
+  });
 });
 
 $(window).on("scroll", function() {
@@ -17,9 +21,6 @@ var name1 = document.querySelector("#name");
 var email = document.querySelector("#email");
 var message = document.querySelector("#message");
 
-console.log(submit);
-console.log(email);
-console.log(name1);
 submit.addEventListener("click", () => {
   name1.value = "";
   email.value = "";
